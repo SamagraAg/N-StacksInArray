@@ -61,7 +61,7 @@ public:
     int pop(int m)
     {
         // check Underflow
-        if (top[m] == -1)
+        if (top[m-1] == -1)
             return -1;
         // fetch index for pop
         int index = top[m - 1];
